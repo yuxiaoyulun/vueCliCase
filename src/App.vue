@@ -4,10 +4,10 @@
  * @Author: @yulun
  * @Date: 2022-10-09 21:34:36
  * @LastEditors: @yulun
- * @LastEditTime: 2023-02-07 14:50:50
+ * @LastEditTime: 2023-02-07 17:14:05
 -->
 <template>
-  <div>sss</div>
+  <div>{{env}}</div>
 </template>
 
 <script>
@@ -15,7 +15,9 @@
 export default {
   name: 'App',
   data(){
-    return {}
+    return {
+      env:process.env.BASE_URL
+    }
   }
 }
 </script>
